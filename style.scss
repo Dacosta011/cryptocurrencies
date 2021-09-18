@@ -1,0 +1,39 @@
+body{
+    text-align: center;
+    background: #080B52;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    padding-top: 4em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.5em;
+    color: white;
+}
+
+.img-container{
+    padding: 10em 6em 0 6em;
+    display: flex;
+    justify-content: space-around;
+    img{
+        width: 20em;
+        height: 20em;
+    }
+    .rotate{
+        animation-name: rotation;
+	    animation-duration: 10s;
+	    animation-iteration-count: infinite;
+	    animation-timing-function: linear;
+    }
+
+    @keyframes rotation {
+        0% {
+          transform:rotate(0deg);
+        }
+        100% {
+          transform:rotate(360deg);
+        }
+      }
+}
+
